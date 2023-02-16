@@ -247,7 +247,7 @@ git pull [<options>] <remote> <branch>
 > > `--no-rebase`: 不要使用`git rebase`。如果本地分支已经存在，`git pull`默认会使用`git merge`
 > > `--no-commit`: 在拉取后不要自动创建新的提交，即使远程分支有新提交
 > > `--squash`: 将所有拉取的提交压缩为单个提交
-> > `--depth <depth>`: 限制拉取历史记录的深度，只获取指定深度以内的提交
+> > `--depth <depth>`: 限制拉取历史记录的深度，只获取指定深度`<depth>`以内的提交
 > > `--quiet`: 抑制输出，不会显示拉取的提交和更新的分支
 > > `--verbose`: 显示详细的输出，包括拉取的提交和更新的分支
 > `<remote>`: 远程仓库的名称，默认为`origin`
@@ -285,7 +285,7 @@ git branch [<options>] <branch>
 > > `-vv`: 显示每个分支的详细信息，包括与远程分支的关联信息
 > > `--merged`: 列出已经合并到当前分支的分支
 > > `--no-merged`: 列出未合并到当前分支的分支
-> > `--column[=<options>]`: 使用列格式列出分支，可以通过设置选项来自定义列格式
+> > `--column[=<options>]`: 使用列格式列出分支，可以通过设置选项`<options>`来自定义列格式
 > > > - `--no-column`: 禁用列格式
 > > > - `--sort=<key>`: 按指定的关键字排序输出分支
 > > > - `--points-at <object>`: 显示指向指定对象的所有分支
@@ -321,7 +321,7 @@ git merge [<options>] <branch>
 > > `--ff-only`: 只能进行快进合并，如果分支无法快进合并，那么该命令将失败
 > > `--abort`: 中止当前正在进行的合并操作
 > > `--squash`: 将合并的提交压缩成单个提交，而不是创建新的合并提交
-> > `--strategy=<option>`或`--strategy-option=<option>`: 用于指定合并策略和特定的选项
+> > `--strategy=<option>`或`--strategy-option=<option>`: 用于指定合并策略和特定的选项`option`
 > > > - `recursive`: 自动合并代码，并在无法自动合并时提示用户手动解决冲突(默认)
 > > > - `octopus`: 另一种自动合并策略，支持更多的情况
 > > > - `subtree`: 一种同时合并多个分支的策略，可以合并两个以上的分支
