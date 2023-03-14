@@ -58,13 +58,44 @@ font标签属性：
   size：规定文本的尺寸大小，从 1 到 7 的数字，浏览器默认值是 3。
   color: 颜色 十六进制颜色值或RGB值
 ```
+```
+<font face="STCAIYUN">华文彩云</font>
+<font color=gray size=5>color=gray</font>
+<font color=#0099ff size=5 face="黑体">color=#0099ff size=5 face="黑体"</font>
+```
 <font face="STCAIYUN">华文彩云</font>
 <font color=gray size=5>color=gray</font>
 <font color=#0099ff size=5 face="黑体">color=#0099ff size=5 face="黑体"</font>
 
+# 对齐
+```
+采用HTML标签：<p>
+p标签属性：
+  align： 对齐方式
+```
+```
+<p align="right">右对齐</p>
+<p align="left">左对齐</p>
+<p align="center">居中</p>
+```
+<p align="right">右对齐</p>
+<p align="left">左对齐</p>
+<p align="center">居中</p>
+
 # 分割线
 ```
 一行中用三个以上的* - _来建立分隔线，行内不能有其他文本，但是可以插入空格
+```
+```
+***
+
+* * *
+
+*****
+
+- - -
+
+----------
 ```
 ***
 
