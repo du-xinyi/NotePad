@@ -1,4 +1,6 @@
-# #51开发
+[TOC]
+
+# 51开发
 1. 安装插件
 ![](img/plugin.png)
 通过<https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py>下载get-platformio.py文件后使用python运行
