@@ -1,4 +1,6 @@
-# # 上下标，正负无穷
+[TOC]
+
+# 上下标，正负无穷
 |数学表达式 |LaTex代码|
 |:-------:|:-------:|
 |  $x^2$  |   x^2   |
@@ -6,18 +8,34 @@
 |$\infty$ |  \infty |
 |$-\infty$| -\infty |
 
-# # 加减乘除，分号，根号，省略号
+# 上下标记
+|     数学表达式    |   LaTex代码   |
+|:---------------:|:-------------:|
+|$\overline{x+y}$ | \overline{x+y}|
+|$\underline{a+b}$|\underline{a+b}|
+
+# 加减乘除
 |   数学表达式   |  LaTex代码 |
 |:------------:|:----------:|
 |  $a+b-c*d$   |   a+b-c*d  |
 |  $a\div(b)$  |  a\div(b)  |
 |  $a\pm(b)$   |   a\pm(b)  |
+
+# 根号，分式
+|   数学表达式   |  LaTex代码 |
+|:------------:|:----------:|
 |$\frac{a}{b}$ | \frac{a}{b}|
 |  $\sqrt{b}$  |  \sqrt{b}  |
-|    $\cdot$   |    \cdot   |
-|   $\cdots$   |   \cdots   |
+|$\sqrt[n]{b}$ |\sqrt[n]{b} |
 
-# # 三角函数
+# 向量
+|      数学表达式      |     LaTex代码    |
+|:------------------:|:----------------:|
+|      $\vec{a}$     |      \vec{a}     |
+|$\overrightarrow{A}$|\overrightarrow{A}|
+| $\overleftarrow{A}$|\overleftarrow{A} |
+
+# 三角函数
 |     数学表达式    |   LaTex代码   |
 |:---------------:|:-------------:|
 |  $\sin(\theta)$ |  \sin(\theta) |
@@ -27,15 +45,24 @@
 |  $\tan(\theta)$ |  \tan(\theta) |
 |  $\cot(\theta)$ |  \cot(\theta) |
 
-# # 矢量，累加累乘，极限
+# 积分,极限,求和,乘积
 |             数学表达式            |           LaTex代码           |
 |:-------------------------------:|:-----------------------------:|
-|            $\vec{F}$            |            \vec{F}            |
+|    $\int_{1}^{5}x\mathrm{d}x$   |    \int_{1}^{5}x\mathrm{d}x   |
+|$\lim_{a\rightarrow+\infty}{a+b}$|\lim_{a\rightarrow+\infty}{a+b}|
 |      $\sum_{i=1}^{n}{a_i}$      |      \sum_{i=1}^{n}{a_i}      |
 |      $\prod_{i=1}^{n}{a_i}$     |      \prod_{i=1}^{n}{a_i}     |
-|$\lim_{a\rightarrow+\infty}{a+b}$|\lim_{a\rightarrow+\infty}{a+b}|
 
-# # 希腊字母
+# 点，省略号
+| 数学表达式 | LaTex代码 |
+|:--------:|:---------:|
+|  $\cdot$ |   \cdot   |
+| $\cdots$ |   \cdots  |
+| $\ldots$ |   \ldots  |
+| $\vdots$ |   \vdots  |
+| $\ddots$ |   \ddots  |
+
+# 希腊字母
 |   数学表达式  | LaTex代码 |
 |:-----------:|:--------:|
 |   $\alpha$  |  \alpha  |
@@ -62,13 +89,32 @@
 |   $\psi$    |   \psi   |
 |   $\omega$  |  \omega  |
 
-# # 关系运算符
+# 关系运算符
 |数学表达式|LaTex代码|
 |:------:|:------:|
 | $\leq$ |  \leq  |
 | $\geq$ |  \geq  |
 
-# # 矩阵
+# 公式
+```
+使用\begin{cases}…\end{cases}生成，每一行以\\结尾表示换行，元素间以&间隔
+```
+```
+D(x) = \begin{cases}
+\lim\limits_{x \to 0} \frac{a^x}{b+c}, & x<3 \\
+\pi, & x=3 \\
+\int_a^{3b}x_{ij}+e^2 \mathrm{d}x,& x>3 \\
+\end{cases}
+```
+$$
+D(x) = \begin{cases}
+\lim\limits_{x \to 0} \frac{a^x}{b+c}, & x<3 \\
+\pi, & x=3 \\
+\int_a^{3b}x_{ij}+e^2 \mathrm{d}x,& x>3 \\
+\end{cases}
+$$
+
+# 矩阵
 1.简单矩阵
 ```
 使用\begin{matrix}…\end{matrix}生成，每一行以\\结尾表示换行，元素间以&间隔，表示序号\tag{1}（右边的序号）
@@ -203,7 +249,7 @@ $$
 \right\}
 $$
 
-# # 行列式
+# 行列式
 ```
 与矩阵类似
 ```
@@ -222,7 +268,7 @@ $$
 \end{vmatrix}
 $$
 
-# # 表格
+# 表格
 1.简易表格
 ```
 使用\begin{array}…\end{array}生成，每一行以\\结尾表示换行，元素间以&间隔
